@@ -1,1 +1,57 @@
-
+{
+  "_id": "60c72b2f9b1e8b002fbd1b0a",
+  "title": "The Little Prince",
+  "author": "Antoine de Saint-Exupéry",
+  "isbn": "978-0156012195",
+  "publisher": "Harcourt",
+  "publication_date": "1943-04-06",
+  "genre": ["Fiction", "Fantasy", "Children's Literature"],
+  "languages": [
+    {
+      "language": "English",
+      "number_of_pages": 96,
+      "description": "A young prince explores the universe, learning about love, responsibility, and the nature of human relationships.",
+      "cover_url": "https://example.com/cover-en.jpg",
+      "download_links": {
+        "pdf": "https://example.com/download/the-little-prince-en.pdf",
+        "epub": "https://example.com/download/the-little-prince-en.epub",
+        "mobi": "https://example.com/download/the-little-prince-en.mobi"
+      }
+    },
+    {
+      "language": "Spanish",
+      "number_of_pages": 96,
+      "description": "Un joven príncipe explora el universo, aprendiendo sobre el amor, la responsabilidad y la naturaleza de las relaciones humanas.",
+      "cover_url": "https://example.com/cover-es.jpg",
+      "download_links": {
+        "pdf": "https://example.com/download/the-little-prince-es.pdf",
+        "epub": "https://example.com/download/the-little-prince-es.epub",
+        "mobi": "https://example.com/download/the-little-prince-es.mobi"
+      }
+    },
+    {
+      "language": "French",
+      "number_of_pages": 96,
+      "description": "Un jeune prince explore l'univers, apprenant sur l'amour, la responsabilité et la nature des relations humaines.",
+      "cover_url": "https://example.com/cover-fr.jpg",
+      "download_links": {
+        "pdf": "https://example.com/download/the-little-prince-fr.pdf",
+        "epub": "https://example.com/download/the-little-prince-fr.epub",
+        "mobi": "https://example.com/download/the-little-prince-fr.mobi"
+      }
+    }
+  ],
+  "availability": true,
+  "reviews": [
+    {
+      "user": "Viviana Nazi",
+      "comment": "A timeless classic that speaks to all ages.",
+      "rating": 5
+    },
+    {
+      "user": "Ale Dev",
+      "comment": "Beautifully written and illustrated.",
+      "rating": 4
+    }
+  ]
+}
