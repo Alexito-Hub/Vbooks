@@ -1,15 +1,15 @@
 {
   "_id": "60c72b2f9b1e8b002fbd1b0a",
-  "title": "The Little Prince",
   "author": "Antoine de Saint-Exupéry",
   "isbn": "978-0156012195",
   "publisher": "Harcourt",
   "publication_date": "1943-04-06",
-  "genre": ["Fiction", "Fantasy", "Children's Literature"],
   "languages": [
     {
       "language": "English",
+      "title": "The Little Prince",
       "number_of_pages": 96,
+      "genre": ["Fiction", "Fantasy", "Children's Literature"],
       "description": "A young prince explores the universe, learning about love, responsibility, and the nature of human relationships.",
       "cover_url": "https://example.com/cover-en.jpg",
       "download_links": {
@@ -20,7 +20,9 @@
     },
     {
       "language": "Spanish",
+      "title": "El Principito",
       "number_of_pages": 96,
+      "genre": ["Ficción", "Fantasía", "Literatura Infantil"],
       "description": "Un joven príncipe explora el universo, aprendiendo sobre el amor, la responsabilidad y la naturaleza de las relaciones humanas.",
       "cover_url": "https://example.com/cover-es.jpg",
       "download_links": {
@@ -31,7 +33,9 @@
     },
     {
       "language": "French",
+      "title": "Le Petit Prince",
       "number_of_pages": 96,
+      "genre": ["Fiction", "Fantasy", "Littérature Enfantine"],
       "description": "Un jeune prince explore l'univers, apprenant sur l'amour, la responsabilité et la nature des relations humaines.",
       "cover_url": "https://example.com/cover-fr.jpg",
       "download_links": {
