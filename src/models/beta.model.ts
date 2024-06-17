@@ -15,4 +15,4 @@ const betaBookSchema = new Schema<BetaBook>({
 
 const BETA_BOOK_MODEL_DATA = model<BetaBook>('BetaBook', betaBookSchema);
 
-export { BETA_BOOK_MODEL_DATA };
+export default BETA_BOOK_MODEL_DATA;
