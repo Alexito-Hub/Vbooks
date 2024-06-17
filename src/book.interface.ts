@@ -1,4 +1,3 @@
-import { Document } from 'mongoose';
 
 export interface Book extends Document {
     author: string;
