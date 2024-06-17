@@ -1,6 +1,6 @@
 import { connect, connection } from 'mongoose';
 
-connect(connectionString, connectionOptions)
+connect("mongodb+srv://books:yY0jOC6onDDXBnZY@serverdatadb.39fv13g.mongodb.net/?retryWrites=true&w=majority&appName=ServerDataDB")
   .then(() => {
     console.log('Connected to MongoDB Atlas!');
   })
