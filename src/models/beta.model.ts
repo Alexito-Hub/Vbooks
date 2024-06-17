@@ -1,17 +1,18 @@
-import { Schema, model, Document } from 'mongoose';
+import { Schema, model } from 'mongoose';
 
-export interface IBetaBook extends Document {
+export interface BetaBook {
+    _id: string;
     autor: string;
     titulo: string;
     link: string;
 }
 
-const betaBookSchema = new Schema<IBetaBook>({
+const betaBookSchema = new Schema<BetaBook>({
     autor: { type: String, required: true },
     titulo: { type: String, required: true },
     link: { type: String, required: true },
 });
 
-const BETA_BOOK_MODEL_DATA = model<IBetaBook>('BetaBook', betaBookSchema);
+const BETA_BOOK_MODEL_DATA = model<BetaBook>('BetaBook', betaBookSchema);
 
-export default BETA_BOOK_MODEL_DATA;
+export { BETA_BOOK_MODEL_DATA };

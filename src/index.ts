@@ -36,17 +36,17 @@ async function getVbooks(searchParams: {
 
 async function getVbeta(searchParams: {
     autor?: string;
-    título?: string;
+    titulo?: string;
 }): Promise<{ books: BetaBookInterface[], query: any }> {
-    const { autor, título } = searchParams;
+    const { autor, titulo } = searchParams;
     const query: any = {};
 
     if (autor) {
         query['autor'] = { $regex: new RegExp(tokenizer.tokenize(autor).join('|')), $options: 'i' };
     }
 
-    if (título) {
-        query['título'] = { $regex: new RegExp(tokenizer.tokenize(título).join('|')), $options: 'i' };
+    if (titulo) {
+        query['titulo'] = { $regex: new RegExp(tokenizer.tokenize(titulo).join('|')), $options: 'i' };
     }
 
     try {
