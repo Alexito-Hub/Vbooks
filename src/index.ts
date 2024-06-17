@@ -1,4 +1,4 @@
-import { BOOK_MODEL_DATA } from '../models/book.model';
+import { BOOK_MODEL_DATA } from './book.model';
 import * as natural from 'natural';
 
 const tokenizer = new natural.WordTokenizer();
