@@ -58,7 +58,7 @@ const bookSchema = new Schema<Book>({
             rating: { type: Number, required: true },
         },
     ],
-});
+}, { collection: 'Vbooks', versionKey: false });
 
 const BOOK_MODEL_DATA = model<Book>('Book', bookSchema);
 
