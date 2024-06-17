@@ -1,0 +1,38 @@
+{
+  "name": "vbooks",
+  "version": "1.0.0",
+  "description": "es",
+  "main": "d libros virtuales",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "get awesome books through VBooks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexito-Hub/Vbooks.git"
+  },
+  "keywords": [
+    "libros",
+    "libro",
+    "book",
+    "books",
+    "bot",
+    "user",
+    "libreria",
+    "npm",
+    "github",
+    "nodejs"
+  ],
+  "author": "Viviana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexito-Hub/Vbooks/issues"
+  },
+  "homepage": "https://github.com/Alexito-Hub/Vbooks#readme",
+  "dependencies": {
+    "mongoose": "^8.4.1",
+    "natural": "^7.0.6"
+  }
+}
