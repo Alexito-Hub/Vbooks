@@ -1,4 +1,5 @@
-import BOOK_MODEL_DATA, { Book as BookInterface } from './book.model';
+import BOOK_MODEL_DATA, { Book as BookInterface } from './models/book.model';
+import BETA_BOOK_MODEL_DATA, { BetaBook as BetaBookInterface } from './models/beta.model';
 import * as natural from 'natural';
 
 const tokenizer = new natural.WordTokenizer();
@@ -29,12 +30,31 @@ async function getVbooks(searchParams: {
         const books = await BOOK_MODEL_DATA.find(query);
         return { books, query };
     } catch (error) {
-        if (error instanceof Error) {
-            throw new Error('Error fetching books: ' + error.message);
-        } else {
-            throw new Error('Unknown error fetching books');
-        }
+        throw new Error('Error fetching books: ' + error.message);
     }
 }
 
-export { getVbooks };
+async function getVbeta(searchParams: {
+    autor?: string;
+    título?: string;
+}): Promise<{ books: BetaBookInterface[], query: any }> {
+    const { autor, título } = searchParams;
+    const query: any = {};
+
+    if (autor) {
+        query['autor'] = { $regex: new RegExp(tokenizer.tokenize(autor).join('|')), $options: 'i' };
+    }
+
+    if (título) {
+        query['título'] = { $regex: new RegExp(tokenizer.tokenize(título).join('|')), $options: 'i' };
+    }
+
+    try {
+        const books = await BETA_BOOK_MODEL_DATA.find(query);
+        return { books, query };
+    } catch (error) {
+        throw new Error('Error fetching beta books: ' + error.message);
+    }
+}
+
+export { getVbooks, getVbeta };
