@@ -2,38 +2,51 @@ LICENCIA de Uso y Distribución Limitada
 
 https://licence.zioo.space/vbooks-git
 
-1. Permisos
-   Este software y su código fuente están disponibles para su uso, copia y distribución bajo las siguientes condiciones:
-   Se permite el uso del software en proyectos personales y comerciales.
-   Se permite la distribución de libros y contenidos siempre que estos sean de dominio público o se posean los derechos para su distribución.
-   Se permite la modificación del software para uso personal, siempre y cuando no se distribuya la versión modificada.
-   Se permite la inclusión del software en proyectos de código abierto, siempre y cuando se mantenga la misma licencia.
 
-2. Restricciones
-   Queda estrictamente prohibido editar, fusionar, sublicenciar o vender el software y su código fuente.
-   El uso del código sin dar crédito a los autores de los libros distribuidos por este software está limitado. Se debe proporcionar un reconocimiento adecuado a los autores de cualquier material protegido por derechos de autor incluido en la distribución.
-   No se permite el uso del software para actividades ilegales o para la distribución de contenido que infrinja los derechos de autor.
-   No se permite la redistribución del software como parte de una oferta comercial sin el consentimiento previo por escrito de los autores.
+Permisos
 
-3. Condiciones
-   Al utilizar este software o cualquier parte de él, el usuario se compromete a respetar los derechos de autor y las condiciones establecidas en esta licencia.
-   El software se debe distribuir con este texto de licencia incluido, sin modificacione
-   Los usuarios deben incluir un enlace a esta licencia en cualquier documentación o publicidad relacionada con el uso del software.
-   El uso de este software en entornos de producción debe incluir una referencia clara a los autores originales y al repositorio del software.
+Este software y su código fuente están disponibles para su uso, copia y distribución bajo las siguientes condiciones:
+Se permite el uso del software en proyectos personales y comerciales.
+Se permite la distribución de libros y contenidos siempre que estos sean de dominio público o se posean los derechos para su distribución.
+Se permite la modificación del software para uso personal, siempre y cuando no se distribuya la versión modificada.
+Se permite la inclusión del software en proyectos de código abierto, siempre y cuando se mantenga la misma licencia.
 
-4. Publicación en npm
-   Al publicar el módulo en npm, se debe incluir un aviso claro de los términos de esta licencia y cómo deben atribuirse los créditos a los autores de los libros.
-   Se debe incluir un enlace a la licencia completa en la página del módulo npm.
-   Cualquier actualización significativa del software publicada en npm debe ser acompañada por una nota de los cambios realizados y cómo estos afectan a la licencia.
 
-5. Limitación de Responsabilidad
-   El software se proporciona "tal cual", sin garantía de ningún tipo, ya sea expresa o implícita. Los autores no serán responsables de ningún daño derivado de su uso.
-   Los autores no se responsabilizan de cualquier daño, pérdida de datos, o cualquier otro tipo de perjuicio que resulte del uso del software.
-   En ningún caso los autores serán responsables de daños indirectos, incidentales, especiales, ejemplares o consecuenciales (incluyendo, pero no limitado a, la adquisición de bienes o servicios sustitutos, pérdida de uso, datos o beneficios; o interrupción del negocio) sin importar la causa y bajo cualquier teoría de responsabilidad, ya sea en contrato, responsabilidad estricta, o agravio (incluyendo negligencia o de otro tipo) que surja de cualquier manera del uso del software, incluso si se advierte de la posibilidad de tales daños.
+Restricciones
 
-6. Varios
-   Esta licencia será gobernada e interpretada de acuerdo con las leyes del país donde se originó el software, sin tener en cuenta las disposiciones sobre conflicto de leyes.
-   Cualquier disputa que surja en relación con esta licencia será resuelta en los tribunales del país de origen del software.
-   Si alguna disposición de esta licencia se considera inválida o inaplicable, las disposiciones restantes seguirán siendo válidas y aplicables en la máxima medida posible.
+Queda estrictamente prohibido editar, fusionar, sublicenciar o vender el software y su código fuente.
+El uso del código sin dar crédito a los autores de los libros distribuidos por este software está limitado. Se debe proporcionar un reconocimiento adecuado a los autores de cualquier material protegido por derechos de autor incluido en la distribución.
+No se permite el uso del software para actividades ilegales o para la distribución de contenido que infrinja los derechos de autor.
+No se permite la redistribución del software como parte de una oferta comercial sin el consentimiento previo por escrito de los autores.
+
+
+Condiciones
+
+Al utilizar este software o cualquier parte de él, el usuario se compromete a respetar los derechos de autor y las condiciones establecidas en esta licencia.
+El software se debe distribuir con este texto de licencia incluido, sin modificacione
+Los usuarios deben incluir un enlace a esta licencia en cualquier documentación o publicidad relacionada con el uso del software.
+El uso de este software en entornos de producción debe incluir una referencia clara a los autores originales y al repositorio del software.
+
+
+Publicación en npm
+
+Al publicar el módulo en npm, se debe incluir un aviso claro de los términos de esta licencia y cómo deben atribuirse los créditos a los autores de los libros.
+Se debe incluir un enlace a la licencia completa en la página del módulo npm.
+Cualquier actualización significativa del software publicada en npm debe ser acompañada por una nota de los cambios realizados y cómo estos afectan a la licencia.
+
+
+Limitación de Responsabilidad
+
+El software se proporciona "tal cual", sin garantía de ningún tipo, ya sea expresa o implícita. Los autores no serán responsables de ningún daño derivado de su uso.
+Los autores no se responsabilizan de cualquier daño, pérdida de datos, o cualquier otro tipo de perjuicio que resulte del uso del software.
+En ningún caso los autores serán responsables de daños indirectos, incidentales, especiales, ejemplares o consecuenciales (incluyendo, pero no limitado a, la adquisición de bienes o servicios sustitutos, pérdida de uso, datos o beneficios; o interrupción del negocio) sin importar la causa y bajo cualquier teoría de responsabilidad, ya sea en contrato, responsabilidad estricta, o agravio (incluyendo negligencia o de otro tipo) que surja de cualquier manera del uso del software, incluso si se advierte de la posibilidad de tales daños.
+
+
+Varios
+
+Esta licencia será gobernada e interpretada de acuerdo con las leyes del país donde se originó el software, sin tener en cuenta las disposiciones sobre conflicto de leyes.
+Cualquier disputa que surja en relación con esta licencia será resuelta en los tribunales del país de origen del software.
+Si alguna disposición de esta licencia se considera inválida o inaplicable, las disposiciones restantes seguirán siendo válidas y aplicables en la máxima medida posible.
+
 
 El uso de este software implica la aceptación de los términos y condiciones de esta licencia.
