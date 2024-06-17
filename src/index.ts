@@ -30,7 +30,7 @@ async function getVbooks(searchParams: {
         const books = await BOOK_MODEL_DATA.find(query);
         return { books, query };
     } catch (error) {
-        throw new Error('Error fetching books: ' + error.message);
+        throw new Error('Error fetching books: ' + error);
     }
 }
 
@@ -53,7 +53,7 @@ async function getVbeta(searchParams: {
         const books = await BETA_BOOK_MODEL_DATA.find(query);
         return { books, query };
     } catch (error) {
-        throw new Error('Error fetching beta books: ' + error.message);
+        throw new Error('Error fetching beta books: ' + error);
     }
 }
 
