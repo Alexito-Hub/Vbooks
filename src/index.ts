@@ -1,4 +1,4 @@
-import { BOOK_MODEL_DATA } from './book.model';
+import BOOK_MODEL_DATA, { Book as BookInterface } from './book.model';
 import * as natural from 'natural';
 
 const tokenizer = new natural.WordTokenizer();
@@ -21,10 +21,20 @@ async function getVbooks(searchParams: {
             : value;
     }
 
+    if (isbn) {
+        query.isbn = isbn;
+    }
+
     try {
         const books = await BOOK_MODEL_DATA.find(query);
         return { books, query };
     } catch (error) {
-        throw new Error('Error fetching books: ' + error.message);
+        if (error instanceof Error) {
+            throw new Error('Error fetching books: ' + error.message);
+        } else {
+            throw new Error('Unknown error fetching books');
+        }
     }
 }
+
+export { getVbooks };
