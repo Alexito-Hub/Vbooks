@@ -36,6 +36,7 @@
   "homepage": "https://github.com/Alexito-Hub/Vbooks#readme",
   "dependencies": {
     "mongoose": "^8.4.1",
-    "natural": "^7.0.6"
+    "natural": "^7.0.6",
+    "vbooks": "github:Alexito-Hub/Vbooks"
   }
 }
