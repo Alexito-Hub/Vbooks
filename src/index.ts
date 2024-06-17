@@ -1,34 +1,30 @@
 import { BOOK_MODEL_DATA } from '../models/book.model';
-import * as SpellChecker from 'spellchecker';
+import * as natural from 'natural';
 
-type SearchParams = {
+const tokenizer = new natural.WordTokenizer();
+
+async function getVbooks(searchParams: {
     title?: string;
     author?: string;
     genre?: string;
     description?: string;
     isbn?: string;
     fragment?: boolean;
-};
-
-type QueryFields = {
-    [K in keyof SearchParams]: K extends 'isbn' ? string : string | RegExp;
-};
-
-async function getVbooks(searchParams: SearchParams): Promise<{ books: BookInterface[], query: any }> {
+}): Promise<{ books: BookInterface[], query: any }> {
     const { isbn, fragment, ...restSearchParams } = searchParams;
-    const query: QueryFields = {};
+    const query: any = {};
 
     for (const key in restSearchParams) {
         const value = restSearchParams[key as keyof typeof restSearchParams];
         query[`languages.${key}`] = typeof value === 'string' && key !== 'fragment'
-            ? SpellChecker.isMisspelled(value) ? { $regex: SpellChecker.getCorrectionsForMisspelling(value)[0], $options: 'i' } : value
+            ? { $regex: new RegExp(tokenizer.tokenize(value).join('|')), $options: 'i' }
             : value;
     }
 
     try {
         const books = await BOOK_MODEL_DATA.find(query);
-        return { books };
-    } catch (e) {
-        throw new Error('Error fetching books: ' + e.message);
+        return { books, query };
+    } catch (error) {
+        throw new Error('Error fetching books: ' + error.message);
     }
 }
